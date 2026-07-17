@@ -99,10 +99,10 @@
         FNs {
             display-name = "FNs";
             bindings = <
-&kp GRAVE       &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &mmv MOVE_X(200)   &kp PRCNT                                   &mmv MOVE_UP                     &kp PRINTSCREEN    &kp F7      &kp F8         &kp F9  &kp F10  &kp F11
-&kp LEFT_SHIFT  &kp Q              &kp LS(N2)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)      &kp LS(N1)  &kp F5         &kp F6  &kp F12  &kp GRAVE
-&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N0)        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
-                                                      &kp LEFT_ALT      &trans             &kp SPACE                                                                    &kp RET            &trans      &kp RIGHT_ALT
+&mkp LCLK       &mmv MOVE_X(-400)  &mmv MOVE_Y(-300)  &mmv MOVE_X(300)  &mmv MOVE_X(400)     &mkp RCLK                                   &mmv MOVE_UP                     &kp PRINTSCREEN    &kp F7      &kp F8         &kp F9  &kp F10  &kp F11
+&kp LEFT_SHIFT  &kp Q              &kp LS(N2)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(NUMBER_5)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)      &kp LS(N1)  &kp F5         &kp F6  &kp F12  &kp GRAVE
+&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp NON_US_BSLH   &kp LS(NON_US_BSLH)  &kp LS(N0)        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
+                                                      &kp LEFT_ALT      &trans               &kp SPACE                                                                    &kp RET            &trans      &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -112,7 +112,7 @@
             display-name = "PadNumberYConf";
             bindings = <
 &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &sys_reset                                &mmv MOVE_UP                     &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp BACKSPACE
-&rgb_ug RGB_ON   &sys_reset       &mkp LCLK        &mkp MCLK        &mkp RCLK        &mkp MB4                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
+&rgb_ug RGB_ON   &msc SCRL_LEFT   &mkp LCLK        &mkp RCLK        &msc SCRL_RIGHT  &mkp MB4                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
 &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &mkp MB5    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
                                                    &kp LEFT_ALT     &trans           &kp SPACE                                                                  &kp ENTER        &trans           &kp NUMBER_0
             >;
