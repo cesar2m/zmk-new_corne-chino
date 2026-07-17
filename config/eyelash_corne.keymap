@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_MAYUS";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
 
@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHITFR_MAYUS";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp RIGHT_SHIFT>, <&kp CAPSLOCK>;
         };
     };
@@ -87,10 +87,10 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8    &kp N9     &kp N0   &kp BSPC
-&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP    &kp HOME   &kp END  &kp INS
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN  &kp RIGHT  &kp END  &kp DEL
-                                              &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp ENTER       &mo 3          &trans
+&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8         &kp N9     &kp N0   &kp BSPC
+&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP         &kp HOME   &kp END  &kp INS
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN       &kp RIGHT  &kp END  &kp DEL
+                                              &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp ENTER       &trans         &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -99,10 +99,10 @@
         FNs {
             display-name = "FNs";
             bindings = <
-&kp GRAVE       &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &mmv MOVE_X(200)  &kp PRCNT                                   &mmv MOVE_UP                     &kp PRINTSCREEN    &kp F7      &kp F8         &kp F9  &kp F10  &kp F11
-&kp LEFT_SHIFT  &kp Q              &kp LS(N2)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)      &kp LS(N1)  &kp F5         &kp F6  &kp F12  &kp GRAVE
-&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp LS(COMMA)     &kp LS(DOT)       &kp LS(N0)        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
-                                                      &kp LEFT_ALT      &trans            &kp SPACE                                                                    &kp RET            &trans      &kp RIGHT_ALT
+&kp GRAVE       &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &mmv MOVE_X(200)   &kp PRCNT                                   &mmv MOVE_UP                     &kp PRINTSCREEN    &kp F7      &kp F8         &kp F9  &kp F10  &kp F11
+&kp LEFT_SHIFT  &kp Q              &kp LS(N2)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)      &kp LS(N1)  &kp F5         &kp F6  &kp F12  &kp GRAVE
+&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N0)        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
+                                                      &kp LEFT_ALT      &trans             &kp SPACE                                                                    &kp RET            &trans      &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
