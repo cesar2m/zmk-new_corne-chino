@@ -45,8 +45,8 @@ layers:
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
@@ -67,7 +67,7 @@ layers:
   - APP
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
-  - {t: Sft+\, s: Sft+|}
+  - {t: Sft+=, s: Sft++}
   - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -94,25 +94,25 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - INS
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - {t: '`', s: '~'}
+  - '&mmv MOVE_X(-200)'
+  - '&mmv MOVE_Y(-200)'
+  - '&mmv MOVE_X(200)'
+  - '&mmv MOVE_X(200)'
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
+  - PRINTSCREEN
   - F7
   - F8
   - F9
   - F10
   - F11
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - Q
   - {t: Sft+2, s: Sft+@}
   - Sft+3
@@ -127,12 +127,12 @@ layers:
   - F6
   - F12
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
-  - <
-  - '>'
-  - {t: '=', s: +}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - Sft+KP COMMA
+  - {t: Sft+., s: Sft+>}
+  - {t: Sft+., s: Sft+>}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: ']', s: '}'}
@@ -140,20 +140,20 @@ layers:
   - F2
   - F3
   - F4
-  - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+6
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   Fn:
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - F5
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - KP NUMLOCK
   - KP 7
@@ -161,8 +161,8 @@ layers:
   - KP 9
   - KP DIVIDE
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_ON'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
@@ -176,11 +176,11 @@ layers:
   - KP 6
   - KP SUBTRACT
   - KP EQUAL
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_OFF'
+  - '&bl BL_CYCLE'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - '&bl BL_SET 40'
   - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -190,10 +190,10 @@ layers:
   - KP 3
   - KP DOT
   - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '0'
   '4':
