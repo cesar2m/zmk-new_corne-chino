@@ -99,12 +99,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   FNs:
-  - {t: '`', s: '~'}
-  - '&mmv MOVE_X(-200)'
-  - '&mmv MOVE_Y(-200)'
-  - '&mmv MOVE_X(200)'
-  - '&mmv MOVE_X(200)'
-  - '%'
+  - $$mdi:mouse-left-click-outline$$
+  - '&mmv MOVE_X(-400)'
+  - '&mmv MOVE_Y(-300)'
+  - '&mmv MOVE_X(300)'
+  - '&mmv MOVE_X(400)'
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - PRINTSCREEN
   - F7
@@ -130,8 +130,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: \, s: '|'}
-  - {t: Sft+\, s: Sft+|}
+  - '|'
+  - Sft+|
   - {t: Sft+0, s: Sft+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -162,10 +162,10 @@ layers:
   - KP DIVIDE
   - {t: '$$mdi:backspace$$', type: backspace}
   - RGB ON
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:pan-left$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
+  - $$mdi:pan-right$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
