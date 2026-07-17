@@ -5,10 +5,10 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &soft_off { hold-time-ms = <2000>; };
 
@@ -111,10 +111,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &sys_reset                                &mmv MOVE_UP                     &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp BACKSPACE
-&bl BL_ON       &sys_reset    &mkp LCLK     &mkp MCLK     &mkp RCLK      &mkp MB4                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
-&bl BL_OFF      &bl BL_CYCLE  &bl BL_INC    &bl BL_DEC    &bl BL_SET 40  &mkp MB5    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
-                                            &kp LEFT_ALT  &trans         &trans                                                                     &trans           &trans           &kp NUMBER_0
+&bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &sys_reset                                &mmv MOVE_UP                     &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp BACKSPACE
+&rgb_ug RGB_ON   &sys_reset       &mkp LCLK        &mkp MCLK        &mkp RCLK        &mkp MB4                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
+&rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &mkp MB5    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
+                                                   &kp LEFT_ALT     &trans           &trans                                                                     &trans           &trans           &kp NUMBER_0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
