@@ -161,7 +161,7 @@ layers:
   - KP 9
   - KP DIVIDE
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&bl BL_ON'
+  - RGB ON
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -176,11 +176,11 @@ layers:
   - KP 6
   - KP SUBTRACT
   - KP EQUAL
-  - '&bl BL_OFF'
-  - '&bl BL_CYCLE'
-  - '&bl BL_INC'
-  - '&bl BL_DEC'
-  - '&bl BL_SET 40'
+  - RGB OFF
+  - RGB EFF
+  - RGB BRD
+  - RGB BRI
+  - RGB HUI
   - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
