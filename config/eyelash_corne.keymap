@@ -87,10 +87,10 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                       &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8    &kp N9     &kp N0   &kp BSPC
-&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp LS(EQUAL)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP    &kp HOME   &kp END  &kp INS
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN  &kp RIGHT  &kp END  &kp DEL
-                                              &kp LEFT_GUI  &trans         &kp SPACE                                                                     &kp ENTER       &kp DEL        &trans
+&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8    &kp N9     &kp N0   &kp BSPC
+&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP    &kp HOME   &kp END  &kp INS
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN  &kp RIGHT  &kp END  &kp DEL
+                                              &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp ENTER       &mo 3          &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -101,7 +101,7 @@
             bindings = <
 &kp GRAVE       &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &mmv MOVE_X(200)  &kp PRCNT                                   &mmv MOVE_UP                     &kp PRINTSCREEN    &kp F7      &kp F8         &kp F9  &kp F10  &kp F11
 &kp LEFT_SHIFT  &kp Q              &kp LS(N2)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(MINUS)      &kp LS(N1)  &kp F5         &kp F6  &kp F12  &kp GRAVE
-&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp LS(KP_COMMA)  &kp LS(DOT)       &kp LS(DOT)       &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
+&kp LCTRL       &kp LEFT_GUI       &kp LEFT_ALT       &kp LS(COMMA)     &kp LS(DOT)       &kp LS(N0)        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp F1      &kp F2         &kp F3  &kp F4   &kp LS(NUMBER_6)
                                                       &kp LEFT_ALT      &trans            &kp SPACE                                                                    &kp RET            &trans      &kp RIGHT_ALT
             >;
 
@@ -114,7 +114,7 @@
 &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &sys_reset                                &mmv MOVE_UP                     &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp BACKSPACE
 &rgb_ug RGB_ON   &sys_reset       &mkp LCLK        &mkp MCLK        &mkp RCLK        &mkp MB4                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
 &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &mkp MB5    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
-                                                   &kp LEFT_ALT     &trans           &trans                                                                     &trans           &trans           &kp NUMBER_0
+                                                   &kp LEFT_ALT     &trans           &kp SPACE                                                                  &kp ENTER        &trans           &kp NUMBER_0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
