@@ -68,7 +68,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
   - {t: Sft+=, s: Sft++}
-  - {t: Sft+=, s: Sft++}
+  - {t: '=', s: +}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -96,7 +96,7 @@ layers:
   - {type: held}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
+  - PadNumberYConf
   - {t: '$$mdi:transfer$$', type: trans}
   FNs:
   - {t: '`', s: '~'}
@@ -130,9 +130,9 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - Sft+KP COMMA
+  - {t: 'Sft+,', s: Sft+<}
   - {t: Sft+., s: Sft+>}
-  - {t: Sft+., s: Sft+>}
+  - {t: Sft+0, s: Sft+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: ']', s: '}'}
@@ -192,8 +192,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - '0'
 combos:
