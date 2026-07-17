@@ -96,8 +96,8 @@ layers:
   - {type: held}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - PadNumberYConf
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   FNs:
   - {t: '`', s: '~'}
   - '&mmv MOVE_X(-200)'
@@ -130,8 +130,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: 'Sft+,', s: Sft+<}
-  - {t: Sft+., s: Sft+>}
+  - {t: \, s: '|'}
+  - {t: Sft+\, s: Sft+|}
   - {t: Sft+0, s: Sft+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
