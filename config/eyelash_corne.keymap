@@ -66,6 +66,10 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
+            slow-release;
+            layers = <2>;
+            timeout-ms = <3000>;
+            require-prior-idle-ms = <1000>;
         };
     };
 
@@ -87,9 +91,9 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8         &kp N9     &kp N0   &kp BSPC
-&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP         &kp HOME   &kp END  &kp INS
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN       &kp RIGHT  &kp END  &kp DEL
+&kp TAB           &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7         &kp N8         &kp N9     &kp N0         &kp BSPC
+&kp LEFT_SHIFT    &kp K_APP     &kp LEFT_ALT  &kp TAB       &kp LS(EQUAL)  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp APOSTROPHE  &kp BACKSLASH  &kp UP         &kp HOME   &kp END        &shitfR_mayus
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp PAGE_UP   &kp PAGE_DOWN  &kp MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(N7)      &kp LEFT       &kp DOWN       &kp RIGHT  &kp RA(MINUS)  &kp DEL
                                               &kp LEFT_GUI  &trans         &kp SPACE                                                                 &kp ENTER       &trans         &kp RIGHT_ALT
             >;
 
